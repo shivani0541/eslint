@@ -19,7 +19,7 @@
                 data-url="https://{{ other_site.hostname }}/docs/latest{{ page.url | prettyURL }}"
                 {% if site.language.code==other_site.language.code %}selected{% endif %}
             >
-                {{ other_site.language.flag }} {{ other_site.language.name }}
+                {{ other_site.language.flag }} {{ other_site.language.name }} ({{ other_site.footer.language_switcher.latest }})
             </option>
             {% endfor %}
         </select>
